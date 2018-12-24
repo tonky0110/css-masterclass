@@ -8,8 +8,10 @@
     <style>
       .father {
         display: flex;
-        align-content:
+        flex-direction: column;
         justify-content: space-between;
+        align-items: center;
+        height: 100vh;
       }
       .box {
         width: 300px;
@@ -34,6 +36,7 @@
   2) 바로 아래 child에게만 영향을 준다.
   3) father에서 설정을 준다.
   4) 기본은 가로 정렬이다.()
-  *) justify-content: space-around, space-between, flex-start, flex-end등의 정렬을 할 수 있다.
-  *) align-content: flex-start | flex-end | center | space-between | space-around | stretch
+  *) flex-direction: 수직/수평 선택(row/column)
+  *) justify-content: main-axis(default 가로) space-around, space-between, flex-start, flex-end등의 정렬을 할 수 있다.
+  *) align-items: cross-axis(default 세로)
 -->
